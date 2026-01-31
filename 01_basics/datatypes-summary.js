@@ -37,3 +37,31 @@ let myObj = {
 const myFunction = function(){
     console.log("hello world");
 }
+
+
+
+// ***************************************************
+
+// Stack (Primitive) vs Heap (Non-Primitive) Memory
+
+// Stack me just copy hoti h value koi change nhi hota original value me just like call by value vala example.
+let myYoutubename = "hiteshchoudhary.com"
+
+let anothername = myYoutubename;
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+// Heap me reference liya jata h isme original value me change ho jata h just like call by reference
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
